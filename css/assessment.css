@@ -11,20 +11,72 @@ body {
 /* FONTS */
 
 .rund-400 {
-
+  font-family: vag-rundschrift-d, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .frank-400 {
-
+  font-family: franklin-gothic-condensed;
+  font-weight: 500;
+  font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
-
-h1 {
-  text-align: center;
-  margin: 40px 0;
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  .header-left {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: flex-start;
+    align-self: center;
+  }
+  .header-logo {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 2em;
+    h2 {
+      margin: 0;
+    }
+    .frank-400 {
+      /* font-size: 1.8em; */
+      margin-top: 3px;
+    }
+    div {
+      background-color: #d2dbe7;
+      width: 5px;
+      height: 50px;
+      border-radius: 10px;
+    }
+  }
+  .header-right {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: flex-end;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 2;
+    gap: 10px;
+    div {
+      grid-column: 1;
+      margin: 0;
+      display: flex;
+      h4 {
+        margin: 0;
+      }
+    }
+    button {
+      grid-column: 2;
+    }
+  }
 }
-
 
 .accordion {
   width: 900px;
@@ -60,7 +112,6 @@ h1 {
 }
 
 .accordion .question-title::before {
-  content: url(../images/arrow-down.svg);
   color: black;
   position: absolute;
   top: 50%;
@@ -91,6 +142,5 @@ h1 {
 }
 
 .accordion .question-cont.active .question-title::before {
-  content: '-';
   font-size: 30px;
 }
