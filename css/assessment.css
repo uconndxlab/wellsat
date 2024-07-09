@@ -1,14 +1,13 @@
 html {
     padding: 0;
     margin: 0;
+    scrollbar-width: none;
 }
 
 body {
     padding: 0;
     margin: 0;
 }
-
-/* FONTS */
 
 .rund-400 {
   font-family: vag-rundschrift-d, sans-serif;
@@ -23,6 +22,7 @@ body {
 }
 
 header {
+  padding: 30px 50px 0px 50px;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -84,30 +84,41 @@ header {
   color: black;
   background-color: white;
   padding: 45px 45px;
-}
-
-.accordion .question-cont {
-  position: relative;
-  margin: 10px 10px;
-}
-
-.accordion .question-title {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr min-content;
-  padding: 20px 0;
-  font-size: 24px;
-  color: black;
-  cursor: pointer;
-  p {
-    grid-column: 1;
-    margin: 0;
+  .question-cont {
+    position: relative;
+    margin: 10px 10px;
+    .toggle-icon {
+      transition: transform 0.4s ease;
+    }
   }
-  svg {
-    grid-column: 2;
-    justify-self: flex-end;
-    align-self: center;
-    padding: 0;
+  .question-title {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    padding: 20px 0;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    p {
+      grid-column: 1;
+      margin: 0;
+    }
+    svg {
+      grid-column: 2;
+      justify-self: flex-end;
+      align-self: center;
+      padding: 0;
+    }
+  }
+  .question-content {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 780px;
+    overflow: hidden;
+    transition: 0.5s;
   }
 }
 
@@ -120,27 +131,32 @@ header {
   transform: translateY(-50%);
 }
 
-.accordion .question-content {
-  position: relative;
-  background: white;
-  height: 0;
-  font-size: 20px;
-  text-align: justify;
-  width: 780px;
-  overflow: hidden;
-  transition: 0.5s;
-}
-
-.accordion hr {
-  width: 100;
-  margin-left: 0;
-  border: 1px solid grey;
-}
-
 .accordion .question-cont.active .question-content {
   height: 150px;
 }
 
-.accordion .question-cont.active .question-title::before {
-  font-size: 30px;
+.question-cont.active .toggle-icon {
+  transform: rotate(180deg);
+}
+
+footer {
+  background-color: #d2dbe7;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .back-btn {
+    align-self: center;
+    justify-self: flex-start;
+    button {
+      display: flex;
+      justify-items: center;
+      p {
+
+      }
+    }
+
+  }
+  .next-btn {
+    align-self: center;
+    justify-self: flex-end;
+  }
 }
