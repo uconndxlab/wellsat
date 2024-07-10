@@ -46,15 +46,16 @@
     </header>
     <main>
         <section>
-            <h1 class="rund-400">1. Section Title</h1>
             <div class="section-header"> <!-- Question Progress Bar -->
-                <div>
+                <h1 class="rund-400">1. Section Title</h1>
+                <div class="question-prog-bar">
                     <div></div>
                 </div>
                 <h5 class="frank-400">#/16 Questions Answered</h5>
             </div>
             <div class="accordion-body"> <!-- Question Accordion -->
                 <div class="accordion">
+                    <hr class="accordion-hr">
                     <div class="question-cont">
                         <div class="question-title">
                             <p class="frank-400">Question Title</p>
@@ -63,24 +64,64 @@
                             </svg>
                         </div>
                         <div class="question-content frank-400">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ipsa alias consectetur impedit et ipsam dolor minus labore, quos exercitationem doloribus tenetur voluptatibus veniam. Repellat nostrum dolore adipisci deleniti nesciunt.
+                            <p class="frank-400 question-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aperiam rerum commodi voluptate ducimus rem voluptas dolorem incidunt, maiores eum nihil facere quasi aut iure autem deleniti similique voluptates placeat.</p>
+                            <div class="question-option">
+                                <p class="frank-400">N/A - Not applicable</p>
+                            </div>
+                            <div class="question-option">
+                                <p class="frank-400">0 - Not mentioned</p>
+                            </div>
+                            <div class="question-option-long">
+                                <p class="frank-400 question-num">1</p>
+                                <p class="frank-400 question-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam suscipit perferendis, in vel ipsam consequatur quis iste cum illo beatae. Similique accusantium nesciunt quia molestias ea accusamus voluptates, vel perferendis!</p>
+                            </div>
+                            <div class="question-option-long" style="margin-bottom: 20px;">
+                                <p class="frank-400 question-num">2</p>
+                                <p class="frank-400 question-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam suscipit perferendis, in vel ipsam consequatur quis iste cum illo beatae. Similique accusantium nesciunt quia molestias ea accusamus voluptates, vel perferendis!</p>
+                            </div>
                         </div>
                     </div>
                     <hr class="accordion-hr">
+                    <div class="question-cont">
+                        <div class="question-title">
+                            <p class="frank-400">Question Title</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:30px" class="toggle-icon">
+                                <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+                            </svg>
+                        </div>
+                        <div class="question-content frank-400">
+                            <p class="frank-400 question-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aperiam rerum commodi voluptate ducimus rem voluptas dolorem incidunt, maiores eum nihil facere quasi aut iure autem deleniti similique voluptates placeat.</p>
+                            <div class="question-option">
+                                <p class="frank-400">N/A - Not applicable</p>
+                            </div>
+                            <div class="question-option">
+                                <p class="frank-400">0 - Not mentioned</p>
+                            </div>
+                            <div class="question-option-long">
+                                <p class="frank-400 question-num">1</p>
+                                <p class="frank-400 question-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam suscipit perferendis, in vel ipsam consequatur quis iste cum illo beatae. Similique accusantium nesciunt quia molestias ea accusamus voluptates, vel perferendis!</p>
+                            </div>
+                            <div class="question-option-long" style="margin-bottom: 20px;">
+                                <p class="frank-400 question-num">2</p>
+                                <p class="frank-400 question-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam suscipit perferendis, in vel ipsam consequatur quis iste cum illo beatae. Similique accusantium nesciunt quia molestias ea accusamus voluptates, vel perferendis!</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <section class="white-gradient"></section> <!--White Gradient Bottom-->
     <footer>
         <div class="back-btn"> <!-- Back Button -->
             <button>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="width:25px">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="width:18px">
                     <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/>
                 </svg>
                 <p class="frank-400">Back</p>
             </button>
         </div>
-        <button class="next-btn">Next: Section Title</button><!-- Next Button -->
+        <button class="next-btn frank-400 text-white">Next: Section Title</button><!-- Next Button -->
     </footer>
     <script src="js/assessment.js" type="text/javascript"></script>
 </body>

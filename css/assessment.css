@@ -1,8 +1,7 @@
 html {
     padding: 0;
     margin: 0;
-    scrollbar-width: none;
-}
+  }
 
 body {
     padding: 0;
@@ -19,10 +18,15 @@ body {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 500;
   font-style: normal;
+  letter-spacing: 0.05em;
 }
 
 .text-red {
   color: #cb2c3b;
+}
+
+.text-white {
+  color: #fff;
 }
 
 header {
@@ -30,6 +34,13 @@ header {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 1fr 1fr;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 150px;
+  z-index: 1;
+  background-color: #fff;
   .header-left {
     grid-column: 1;
     grid-row: 1;
@@ -109,20 +120,30 @@ header {
 main {
   display: grid;
   justify-items: center;
+  padding-top: 150px;
   section {
     width: 1000px;
     display: grid;
     justify-items: center;
-    h1 {
-      font-size: 3.65em;
-      margin: 0;
-      padding-bottom: 10px;
-    }
     .section-header {
-      width: 100%;
+      z-index: 1;
+      width: 1000px;
       display: grid;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr min-content min-content;
+      gap: 20px;
+      padding-bottom: 30px;
+      position: fixed;
+      height: 150px;
+      background: rgb(255,255,255);
+      background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
+      h1 {
+        justify-self: center;
+        grid-row: 1;
+        font-size: 3.65em;
+        margin: 0;
+      }
       div {
+        grid-row: 2;
         height: 5px;
         width: 100%;
         background-color: #d2dbe7;
@@ -135,16 +156,19 @@ main {
         }
       }
       h5 {
-        grid-row: 2;
+        grid-row: 3;
         margin: 0;
         margin-left: 50px;
         font-size: 1.2em;
       }
     }
     .accordion {
+      z-index: -1;
       width: 900px;
       color: black;
       background-color: white;
+      padding-top: 165px;
+      padding-bottom: 135px;
       hr {
         border: 1px solid #d2dbe7;
       }
@@ -165,7 +189,7 @@ main {
         display: grid;
         grid-template-columns: 1fr min-content;
         padding: 20px 0;
-        font-size: 24px;
+        font-size: 1.5em;
         color: black;
         cursor: pointer;
         p {
@@ -183,35 +207,119 @@ main {
           position: absolute;
           top: 50%;
           right: -5px;
-          font-size: 30px;
+          font-size: 1em;
           transform: translateY(-50%);
         }
       }
       .question-content {
         position: relative;
         max-height: 0;
-        font-size: 20px;
+        font-size: 1.5em;
         text-align: justify;
         width: 780px;
         overflow: hidden;
+        display: grid;
+        justify-items: center;
+        gap: 20px;
+        width: 900px;
         transition: max-height 0.5s ease;
+        .question-desc {
+          font-size: 0.7em;
+          margin: 0;
+        }
+        .question-num {
+          padding-right: 15px;
+        }
+        .question-option {
+          background-color: transparent;
+          border: 2px solid black;
+          margin: 0;
+          padding: 15px 20px;
+          border-radius: 12px;
+          width: 850px;
+          cursor: pointer;
+          transition: all .2s ease;
+          p {
+            margin: 0;
+          }
+        }
+        .question-option-long {
+          background-color: transparent;
+          border: 2px solid black;
+          margin: 0;
+          padding: 15px 20px;
+          border-radius: 12px;
+          width: 850px;
+          display: grid;
+          grid-template-columns: min-content 1fr;
+          cursor: pointer;
+          transition: all .2s ease;
+          p {
+            margin: 0;
+          }
+        }
+        .question-option:hover {
+          color: #fff;
+          background-color: #cb2c3b;
+          border: 2px solid #cb2c3b;
+        }
+        .question-option-long:hover {
+          color: #fff;
+          background-color: #cb2c3b;
+          border: 2px solid #cb2c3b;
+        }
       }
     }
   }
+}
+
+.white-gradient {
+  bottom: 0;
+  margin-bottom: 135px;
+  z-index: 2;
+  position: fixed;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5242471988795518) 58%, rgba(255,255,255,1) 98%);
+  height: 100px;
+  width: 100%;
+  pointer-events: none;
 }
 
 footer {
   background-color: #d2dbe7;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 30px 50px 30px 50px;
+  height: 75px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   .back-btn {
     align-self: center;
     justify-self: flex-start;
     button {
       display: flex;
-      justify-items: center;
+      align-items: center;
+      gap: 15px;
+      font-size: 1.8em;
+      background-color: transparent;
+      border: none;
+      color: #cb2c3b;
+      transition: all .2s ease;
+      cursor: pointer;
       p {
-
+        margin: 0;
+      }
+      svg {
+        fill: #cb2c3b;
+        transition: all 0.2s ease;
+      }
+    }
+    button:hover {
+      color: #fff;
+      svg {
+        fill: #fff;
       }
     }
 
@@ -219,5 +327,17 @@ footer {
   .next-btn {
     align-self: center;
     justify-self: flex-end;
+    font-size: 1.8em;
+    background-color: #cb2c3b;
+    border: none;
+    margin: 0;
+    padding: 10px 26px;
+    border-radius: 8px;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  .next-btn:hover {
+    background-color: #fff;
+    color: #cb2c3b;
   }
 }
