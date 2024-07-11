@@ -121,6 +121,71 @@ header {
       color: white;
     }
   }
+  .sect-bar-cont {
+    grid-column: -1 / 1;
+    grid-row: 2;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    .bar-gray {
+      grid-row: 2;
+      height: 5px;
+      width: 100%;
+      border-radius: 10px;
+      background-color: #d2dbe7;
+    }
+    .bar-green {
+      grid-row: 2;
+      height: 5px;
+      width: 100%;
+      border-radius: 10px;
+      background-color: #22c773;
+    }
+    .section-icon-cont {
+      padding: 0px 10px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
+    .section-complete {
+      border-radius: 50px;
+      height: 45px;
+      width: 45px;
+      background-color: #22c773;
+      border: 6px solid #22c773;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+    .section-current {
+      border-radius: 50px;
+      height: 45px;
+      width: 45px;
+      background-color: transparent;
+      border: 6px solid #cb2c3b;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      .section-open-center {
+        height: 30px;
+        width: 30px;
+        background-color: #cb2c3b;
+        border-radius: 30px;
+      }
+    }
+    .section-open {
+      border-radius: 50px;
+      height: 45px;
+      width: 45px;
+      background-color: transparent;
+      border: 6px solid #cb2c3b;
+    }
+    /* .section-subtitle {
+      position: absolute;
+      font-size: 1em;
+      text-align: center;
+    } */
+  }
 }
 
 main {
@@ -283,6 +348,7 @@ main {
 }
 
 .white-gradient {
+  justify-self: center;
   bottom: 0;
   margin-bottom: 135px;
   z-index: 2;
@@ -290,7 +356,7 @@ main {
   background: rgb(255,255,255);
   background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5242471988795518) 58%, rgba(255,255,255,1) 98%);
   height: 100px;
-  width: 100%;
+  width: 70%;
   pointer-events: none;
 }
 
