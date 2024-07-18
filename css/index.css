@@ -1,0 +1,186 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.rund-400 {
+    font-family: vag-rundschrift-d, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .frank-400 {
+    font-family: "franklin-gothic-urw", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.05em;
+  }
+  
+  .text-red {
+    color: #cb2c3b;
+  }
+  
+  .text-white {
+    color: #fff;
+  }
+
+header {
+    padding: 0 100px;
+    background-color: #d2dbe7;
+    display: grid;
+    justify-items: center;
+    nav {
+        display: grid;
+        width: 100%;
+        grid-template-columns: min-content 1fr min-content;
+        a {
+            text-decoration: none;
+            h3 {
+                align-self: center;
+                justify-self: flex-start;
+                font-size: 2.5em;
+            }
+        }
+        ul {
+            align-self: center;
+            justify-self: center;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 1.3em;
+            li {
+                a {
+                    color: black;
+                    transition: all .1s ease;
+                }
+                a:hover {
+                    color: #cb2c3b;
+                }
+            }
+        }
+        div {
+            align-self: center;
+            justify-self: flex-end;
+            display: flex;
+            align-content: center;
+            gap: 14px;
+            .log-in {
+                background-color: transparent;
+                width: 75px;
+                border: none;
+                margin: 0;
+                gap: 6px;
+                margin: 0;
+                font-size: 1.3em;
+                cursor: pointer;
+                transition: all .1s ease;
+            }
+            .log-in:hover {
+                color: #cb2c3b;
+            }
+            .register {
+                font-size: 1.3em;
+                background-color: transparent;
+                border: 2px solid #cb2c3b;
+                margin: 0;
+                padding: 8px 20px;
+                border-radius: 8px;
+                transition: .2s ease;
+                cursor: pointer;
+            }
+            .register:hover {
+                background-color: #cb2c3b;
+                color: white;
+            }
+        }
+    }
+    section {
+        width: 1300px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, min-content);
+        column-gap: 30px;
+        padding: 75px 0;
+        h1 {
+            grid-column: 1;
+            grid-row: 1;
+            font-size: 5em;
+            margin: 0;
+            padding: 18px 0;
+        }
+        p {
+            grid-column: 1;
+            grid-row: 2;
+            margin: 0;
+            font-size: 1.75em;
+            line-height: 1.5em;
+            padding: 18px 0;
+        }
+        button {
+            grid-column: 1;
+            grid-row: 3;
+            font-size: 2em;
+            width: 300px;
+            background-color: #cb2c3b;
+            border: none;
+            margin: 18px 0;
+            padding: 8px 20px;
+            border-radius: 12px;
+            transition: .2s ease;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: white;
+            color: #cb2c3b;
+        }
+        div {
+            grid-column: 2;
+            grid-row: 1 / -1;
+            height: 600px;
+            width: 600px;
+            background-color: #cb2c3b;
+            border-radius: 30px;
+        }
+    }
+    form {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        padding-bottom: 50px;
+        h2 {
+            font-size: 4em;
+            margin: 0;
+            padding: 20px 0;
+        }
+        input {
+            width: 400px;
+            height: 50px;
+            margin-bottom: 20px;
+            border: none;
+            background-color: white;
+            border-radius: 10px;
+            padding: 3px 15px;
+            font-size: 1.3em;
+        }
+        button {
+            font-size: 2em;
+            width: 300px;
+            background-color: #cb2c3b;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 12px;
+            transition: .2s ease;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: white;
+            color: #cb2c3b;
+        }
+    }
+}
