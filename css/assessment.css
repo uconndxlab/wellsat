@@ -115,10 +115,18 @@ header {
       border-radius: 8px;
       transition: .2s ease;
       cursor: pointer;
+      a {
+        color: #cb2c3b;
+        transition: all .1s ease;
+        text-decoration: none;
+      }
     }
     button:hover {
       background-color: #cb2c3b;
-      color: white;
+      a {
+        color: white;
+        transition: all .1s ease;
+      }
     }
   }
   .sect-bar-cont {

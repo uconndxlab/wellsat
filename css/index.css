@@ -80,9 +80,15 @@ header {
                 font-size: 1.3em;
                 cursor: pointer;
                 transition: all .1s ease;
+                a {
+                    color: black;
+                    transition: all .1s ease;
+                }
             }
             .log-in:hover {
-                color: #cb2c3b;
+                a {
+                    color: #cb2c3b;
+                }
             }
             .register {
                 font-size: 1.3em;
@@ -93,10 +99,16 @@ header {
                 border-radius: 8px;
                 transition: .2s ease;
                 cursor: pointer;
+                a {
+                    color: #cb2c3b;
+                    transition: all .1s ease;
+                }
             }
             .register:hover {
                 background-color: #cb2c3b;
-                color: white;
+                a {
+                    color: white;
+                }
             }
         }
     }
