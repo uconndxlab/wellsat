@@ -156,7 +156,8 @@ header {
             grid-row: 1 / -1;
             height: 600px;
             width: 600px;
-            background-color: #cb2c3b;
+            background-image: url(../images/hero_img.jpg);
+            background-size: contain;
             border-radius: 30px;
         }
     }
@@ -193,6 +194,116 @@ header {
         button:hover {
             background-color: white;
             color: #cb2c3b;
+        }
+    }
+}
+
+main {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 150px;
+    section {
+        margin-top: 100px;
+        width: 1300px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: min-content 1fr;
+        column-gap: 90px;
+        .three-options {
+            background-color: #d2dbe7;
+            display: grid;
+            justify-items: center;
+            border-radius: 25px;
+            h2 {
+                font-size: 3em;
+                margin: 20px 0;
+            }
+            p {
+                text-align: center;
+                margin: 0;
+                line-height: 1.6em;
+                padding: 0 20px;
+                font-size: 1.1em;
+            }
+            button {
+                background-color: #cb2c3b;
+                border: none;
+                color: white;
+                font-size: 1.3em;
+                padding: 7px 20px;
+                border-radius: 8px;
+                margin: 30px 0;
+                cursor: pointer;
+                transition: all .2s ease;
+            }
+            button:hover {
+                background-color: white;
+                color: #cb2c3b;
+            }
+        }
+        .about-card {
+            grid-column: 1/-1;
+            grid-row: 2;
+            align-self: center;
+            justify-self: center;
+            display: grid;
+            justify-items: center;
+            h1 {
+                font-size: 4em;
+                margin: 75px 0 20px 0;
+            }
+            p {
+                text-align: center;
+                font-size: 2em;
+                padding: 0 150px;
+                line-height: 1.5em;
+                margin: 0;
+            }
+            button {
+                background-color: #cb2c3b;
+                border: none;
+                color: white;
+                font-size: 2em;
+                padding: 14px 80px;
+                border-radius: 15px;
+                margin: 30px 0;
+                cursor: pointer;
+                transition: all .2s ease;
+            }
+            button:hover {
+                background-color: #d2dbe7;
+            }
+            
+        }
+    }
+}
+
+footer {
+    background-color: #d2dbe7;
+    display: grid;
+    justify-items: center;
+    div {
+        margin: 25px 0 25px 0;
+        width: 800px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        #rudd-logo {
+            grid-column: 1;
+            grid-row: 1;
+            height: 200px;
+        }
+        #csch-logo {
+            grid-column: 2;
+            grid-row: 1;
+            height: 200px;
+        }
+        #uconn-logo {
+            grid-column: 1/-1;
+            grid-row: 2;
+            height: 130px;
         }
     }
 }
