@@ -1,0 +1,144 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.rund-400 {
+    font-family: vag-rundschrift-d, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .frank-400 {
+    font-family: "franklin-gothic-urw", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.05em;
+  }
+  
+  .text-red {
+    color: #cb2c3b;
+  }
+  
+  .text-white {
+    color: #fff;
+  }
+
+header {
+    padding: 0 100px;
+    background-color: #d2dbe7;
+    display: grid;
+    justify-items: center;
+    nav {
+        display: grid;
+        width: 100%;
+        grid-template-columns: min-content 1fr min-content;
+        a {
+            text-decoration: none;
+            h3 {
+                align-self: center;
+                justify-self: flex-start;
+                font-size: 2.5em;
+            }
+        }
+        ul {
+            align-self: center;
+            justify-self: center;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 1.3em;
+            li {
+                a {
+                    color: black;
+                    transition: all .1s ease;
+                }
+                a:hover {
+                    color: #cb2c3b;
+                }
+            }
+        }
+        div {
+            align-self: center;
+            justify-self: flex-end;
+            display: flex;
+            align-content: center;
+            gap: 14px;
+            .log-in {
+                background-color: transparent;
+                width: 75px;
+                border: none;
+                margin: 0;
+                gap: 6px;
+                margin: 0;
+                font-size: 1.3em;
+                cursor: pointer;
+                transition: all .1s ease;
+                a {
+                    color: black;
+                    transition: all .1s ease;
+                }
+            }
+            .log-in:hover {
+                a {
+                    color: #cb2c3b;
+                }
+            }
+            .register {
+                font-size: 1.3em;
+                background-color: transparent;
+                border: 2px solid #cb2c3b;
+                margin: 0;
+                padding: 8px 20px;
+                border-radius: 8px;
+                transition: .2s ease;
+                cursor: pointer;
+                a {
+                    color: #cb2c3b;
+                    transition: all .1s ease;
+                }
+            }
+            .register:hover {
+                background-color: #cb2c3b;
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+footer {
+    background-color: #d2dbe7;
+    display: grid;
+    justify-items: center;
+    div {
+        margin: 25px 0 25px 0;
+        width: 800px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        #rudd-logo {
+            grid-column: 1;
+            grid-row: 1;
+            height: 200px;
+        }
+        #csch-logo {
+            grid-column: 2;
+            grid-row: 1;
+            height: 200px;
+        }
+        #uconn-logo {
+            grid-column: 1/-1;
+            grid-row: 2;
+            height: 130px;
+        }
+    }
+}
