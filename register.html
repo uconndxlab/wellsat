@@ -27,15 +27,25 @@
     </header>
     <main>
         <form class="login-form" action="/login" method="post">
-            <h2 class="rund-400">Login</h2>
+            <h2 class="rund-400">Register</h2>
             <div class="form-group">
                 <input type="text" id="username" class="frank-400" name="username" required placeholder="Username">
             </div>
             <div class="form-group">
                 <input type="password" id="password" class="frank-400" name="password" required placeholder="Password">
             </div>
+            <div>
+                <input list="states" class="frank-400" name="states" required placeholder="Choose Your State"/>
+                <datalist id="states">
+                    <option value="Connecticut">
+                    <option value="Maine">
+                    <option value="Massachusetts">
+                    <option value="New York">
+                    <option value="Rhode Island">
+                    <option value="Vermont">
+                </datalist>
+            </div>
             <button type="submit" class="frank-400 text-white">Submit</button>
-            <h3 class="frank-400">Email or password combination not found</h4>
     </main>
     <footer>
         <div>

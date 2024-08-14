@@ -161,41 +161,6 @@ header {
             border-radius: 30px;
         }
     }
-    form {
-        display: grid;
-        align-items: center;
-        justify-items: center;
-        padding-bottom: 50px;
-        h2 {
-            font-size: 4em;
-            margin: 0;
-            padding: 20px 0;
-        }
-        input {
-            width: 400px;
-            height: 50px;
-            margin-bottom: 20px;
-            border: none;
-            background-color: white;
-            border-radius: 10px;
-            padding: 3px 15px;
-            font-size: 1.3em;
-        }
-        button {
-            font-size: 2em;
-            width: 300px;
-            background-color: #cb2c3b;
-            border: none;
-            padding: 8px 20px;
-            border-radius: 12px;
-            transition: .2s ease;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: white;
-            color: #cb2c3b;
-        }
-    }
 }
 
 main {
@@ -274,6 +239,45 @@ main {
                 background-color: #d2dbe7;
             }
             
+        }
+    }
+    form {
+        padding-top: 30px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        h2 {
+            font-size: 4em;
+            margin: 0;
+            padding: 20px 0;
+        }
+        .msg-hide {
+            display: none;
+        }
+        input {
+            width: 400px;
+            height: 50px;
+            margin-bottom: 20px;
+            border: none;
+            background-color: white;
+            border: 2px black solid;
+            border-radius: 10px;
+            padding: 3px 15px;
+            font-size: 1.3em;
+        }
+        button {
+            font-size: 2em;
+            width: 300px;
+            background-color: #cb2c3b;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 12px;
+            transition: .2s ease;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: white;
+            color: #cb2c3b;
         }
     }
 }
