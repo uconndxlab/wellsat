@@ -27,7 +27,7 @@ body {
 }
 
 .text-red {
-  color: #cb2c3b;
+  color: #115dab;
 }
 
 .text-white {
@@ -58,7 +58,7 @@ header {
       cursor: pointer;
     }
     svg:hover {
-      stroke: #cb2c3b;
+      stroke: #115dab;
     }
   }
   .header-logo {
@@ -110,20 +110,20 @@ header {
       grid-column: 2;
       font-size: 1.3em;
       background-color: transparent;
-      border: 2px solid #cb2c3b;
+      border: 2px solid #115dab;
       margin: 0;
       padding: 8px 20px;
       border-radius: 8px;
       transition: .2s ease;
       cursor: pointer;
       a {
-        color: #cb2c3b;
+        color: #115dab;
         transition: all .1s ease;
         text-decoration: none;
       }
     }
     button:hover {
-      background-color: #cb2c3b;
+      background-color: #115dab;
       a {
         color: white;
         transition: all .1s ease;
@@ -182,7 +182,7 @@ header {
       height: 45px;
       width: 45px;
       background-color: transparent;
-      border: 6px solid #cb2c3b;
+      border: 6px solid #115dab;
       display: grid;
       align-items: center;
       justify-items: center;
@@ -191,7 +191,7 @@ header {
       .section-open-center {
         height: 30px;
         width: 30px;
-        background-color: #cb2c3b;
+        background-color: #115dab;
         border-radius: 30px;
       }
     }
@@ -203,7 +203,7 @@ header {
       height: 45px;
       width: 45px;
       background-color: transparent;
-      border: 6px solid #cb2c3b;
+      border: 6px solid #115dab;
       transition: all .2s ease;
       cursor: pointer;
     }
@@ -257,7 +257,7 @@ main {
         div {
           height: 5px;
           width: 25%;
-          background-color: #cb2c3b;
+          background-color: #115dab;
         }
       }
       h5 {
@@ -378,13 +378,13 @@ main {
         }
         .question-option:hover {
           color: #fff;
-          background-color: #cb2c3b;
-          border: 2px solid #cb2c3b;
+          background-color: #115dab;
+          border: 2px solid #115dab;
         }
         .question-option-long:hover {
           color: #fff;
-          background-color: #cb2c3b;
-          border: 2px solid #cb2c3b;
+          background-color: #115dab;
+          border: 2px solid #115dab;
         }
       }
     }
@@ -424,14 +424,14 @@ footer {
       font-size: 1.8em;
       background-color: transparent;
       border: none;
-      color: #cb2c3b;
+      color: #115dab;
       transition: all .2s ease;
       cursor: pointer;
       p {
         margin: 0;
       }
       svg {
-        fill: #cb2c3b;
+        fill: #115dab;
         transition: all 0.2s ease;
       }
     }
@@ -449,7 +449,7 @@ footer {
     padding-right: 50px;
     button {
       font-size: 1.8em;
-      background-color: #cb2c3b;
+      background-color: #115dab;
       border: none;
       margin: 0;
       padding: 10px 26px;
@@ -459,7 +459,7 @@ footer {
     }
     button:hover {
       background-color: #fff;
-      color: #cb2c3b;
+      color: #115dab;
     }
   }
 }

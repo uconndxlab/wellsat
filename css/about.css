@@ -28,3 +28,35 @@ header {
         }
     }
 }
+
+main {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    section {
+        width: 1300px;
+        display: grid;
+        justify-items: center;
+        h1 {
+            font-size: 4em;
+        }
+        .tool-use {
+            width: 900px;
+            display: grid;
+            grid-template-columns: 1fr 16.6% 16.6% 1fr;
+            grid-template-rows: 1fr 1fr;
+            .user-type {
+                align-self: flex-start;
+                justify-self: center;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                width: 200px;
+                text-align: center;
+                h2 {
+                    font-size: 1.6em;
+                }
+            }
+        }
+    }
+}
