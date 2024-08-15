@@ -248,7 +248,7 @@ main {
         font-size: 3.65em;
         margin: 0;
       }
-      div {
+      .question-prog-bar {
         grid-row: 2;
         height: 5px;
         width: 100%;
@@ -261,11 +261,34 @@ main {
           background-color: #cb2c3b;
         }
       }
-      h5 {
+      .under-prog-bar {
         grid-row: 3;
-        margin: 0;
-        margin-left: 50px;
-        font-size: 1.2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        h5 {
+          justify-self: start;
+          margin: 0;
+          margin-left: 50px;
+          font-size: 1.2em;
+        }
+        .expand-btn {
+          justify-self: end;
+          margin-right: 50px;
+          button {
+            background-color: transparent;
+            border: #cb2c3b 2px solid;
+            color: #cb2c3b;
+            font-size: 1.2em;
+            padding: 4px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: .2s ease all;
+          }
+          button:hover {
+            background-color: #cb2c3b;
+            color: white;
+          }
+        }
       }
     }
     .accordion {
