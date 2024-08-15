@@ -106,28 +106,28 @@ header {
         font-size: 1.3em;
       }
     }
-    button {
-      align-self: center;
+    a {
       grid-column: 2;
-      font-size: 1.3em;
-      background-color: transparent;
-      border: 2px solid #cb2c3b;
-      margin: 0;
-      padding: 8px 20px;
-      border-radius: 8px;
-      transition: .2s ease;
-      cursor: pointer;
-      a {
-        color: #cb2c3b;
+      text-decoration: none;
+      transition: all .1s ease;
+      button {
+        align-self: center;
+        grid-column: 2;
+        font-size: 1.3em;
+        background-color: transparent;
+        border: 2px solid #cb2c3b;
+        margin: 0;
+        padding: 8px 20px;
+        border-radius: 8px;
+        transition: .2s ease;
+        cursor: pointer;
         transition: all .1s ease;
-        text-decoration: none;
       }
     }
-    button:hover {
-      background-color: #cb2c3b;
-      a {
+    a:hover {
+      button {
+        background-color: #cb2c3b;
         color: white;
-        transition: all .1s ease;
       }
     }
   }
