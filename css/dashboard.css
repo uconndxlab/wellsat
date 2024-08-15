@@ -13,7 +13,20 @@ main {
         display: grid;
         grid-template-columns: min-content min-content 1fr;
         column-gap: 20px;
+        justify-items: center;
+        align-items: center;
         /* border: 2px black solid; */
+        div {
+            background-color: #70747b;
+            width: 100%;
+            display: grid;
+            justify-items: center;
+            color: white;
+            border-radius: 10px;
+            h2 {
+
+            }
+        }
         a {
             text-decoration: none;
         }
