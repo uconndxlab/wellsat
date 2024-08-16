@@ -90,24 +90,27 @@ header {
                     color: #cb2c3b;
                 }
             }
-            .register {
-                font-size: 1.3em;
-                background-color: transparent;
-                border: 2px solid #cb2c3b;
-                margin: 0;
-                padding: 8px 20px;
-                border-radius: 8px;
-                transition: .2s ease;
-                cursor: pointer;
-                a {
+            a {
+                color: #cb2c3b;
+                transition: .2s ease all;
+                .register {
                     color: #cb2c3b;
-                    transition: all .1s ease;
+                    font-size: 1.3em;
+                    background-color: transparent;
+                    border: 2px solid #cb2c3b;
+                    margin: 0;
+                    padding: 8px 20px;
+                    border-radius: 8px;
+                    transition: .2s ease;
+                    cursor: pointer;
+                    transition: .2s ease all;
                 }
             }
-            .register:hover {
-                background-color: #cb2c3b;
-                a {
+            a:hover {
+                color: white;
+                .register {
                     color: white;
+                    background-color: #cb2c3b;
                 }
             }
         }
