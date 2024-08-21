@@ -24,7 +24,7 @@ main {
     .top-bar {
         grid-row: 1;
         display: grid;
-        grid-template-columns: min-content min-content 1fr;
+        grid-template-columns: min-content 1fr;
         column-gap: 20px;
         justify-items: center;
         align-items: center;
