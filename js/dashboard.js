@@ -1,23 +1,27 @@
-let create = document.querySelector(".policy-btn")
-let preInfo = document.querySelector(".pre-assess")
-let exit = document.querySelector(".pre-exit")
+document.addEventListener("DOMContentLoaded", function() {
 
-// preInfo.style.opacity = "0"
-// preInfo.style.display = "none"
+    let create = document.querySelector(".policy-btn")
+    let preInfo = document.querySelector(".pre-assess")
+    let exit = document.querySelector(".pre-exit")
 
-create.addEventListener("click", preOpen)
-exit.addEventListener("click", preClose)
+    preInfo.style.opacity = "0"
+    preInfo.style.display = "none"
 
-function preOpen() {
-    preInfo.style.display = "block"
-    setTimeout(function(){
-        preInfo.style.opacity =  "1"
-    }, 3000)
-}
+    create.addEventListener("click", preOpen)
+    exit.addEventListener("click", preClose)
 
-function preClose() {
-    preInfo.style.opacity =  "0"
-    setTimeout(function(){
-        preInfo.style.display = "none"
-    }, 3000)
-}
+    function preOpen() {
+        preInfo.style.display = "block"
+        setTimeout(function(){
+            preInfo.style.opacity =  "1"
+        }, 10)
+    }
+
+    function preClose() {
+        preInfo.style.opacity =  "0"
+        setTimeout(function(){
+            preInfo.style.display = "none"
+        }, 300)
+    }
+
+})
