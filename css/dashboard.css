@@ -6,6 +6,20 @@ main {
     height: 700px;
     padding: 0 100px;
     margin: 40px 0;
+    .pre-assess {
+        z-index: 2;
+        position: absolute;
+        height: 600px;
+        width: 900px;
+        background-color: #ebf0f7;
+        align-self: center;
+        justify-self: center;
+        border-radius: 30px;
+        -webkit-box-shadow: 0px 0px 41px -13px rgba(0,0,0,0.38);
+        -moz-box-shadow: 0px 0px 41px -13px rgba(0,0,0,0.38);
+        box-shadow: 0px 0px 41px -13px rgba(0,0,0,0.38);
+        transition: all .2s ease;
+    }
     .top-bar {
         grid-row: 1;
         display: grid;
