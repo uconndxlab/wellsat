@@ -116,11 +116,11 @@ main {
                     }
                 }
                 .row-policy:hover {
-                    background-color: #cb2c3b;
+                    background-color: #70747b;
                     color: white;
                 }
                 .row-practice:hover {
-                    background-color: #115dab;
+                    background-color: #70747b;
                     color: white;
                 }
             }
