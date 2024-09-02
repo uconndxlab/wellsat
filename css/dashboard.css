@@ -36,9 +36,6 @@ main {
             justify-items: center;
             color: white;
             border-radius: 10px;
-            h2 {
-
-            }
         }
         a {
             text-decoration: none;
@@ -83,23 +80,34 @@ main {
         text-align: left;
         height: 100%;
         overflow-y: scroll;
-        padding-right: 20px;
+        padding: 0 50px;
         table {
             width: 100%;
             /* border: 1px solid blue; */
             border-collapse: collapse;
             font-size: 1.3em;
             .table-row-gap {
-                height: 10px;
+                height: 14px;
             }
             thead {
+                background-color: transparent;
                 tr {
                     th {
-                        background-color: white;
-                        text-transform: uppercase;
+                        background-color: transparent;
+                        /* text-transform: uppercase; */
                         padding: 0px 50px 20px 50px;
                         position: sticky;
                         top: 0;
+                    }
+                    .select-all {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 20px;
+                        input[type='checkbox'] {
+                            width: 20px;
+                            height: 20px;
+                        }
                     }
                 }
             }
@@ -109,20 +117,34 @@ main {
                 tr {
                     background-color: #ebf0f7;
                     color: #70747b;
-                    border-radius: 100px;
+                    border-radius: 10px;
                     transition: .2s ease all;
                     td {
                         padding: 10px 50px;
+                        input[type='checkbox'] {
+                            width: 20px;
+                            height: 20px;
+                        }
                     }
+                }
+                /* .row-policy {
+                    outline: #ebf0f7 3px solid;
                 }
                 .row-policy:hover {
                     background-color: #70747b;
                     color: white;
+                    outline: solid 3px #cb2c3b;
+                    border-radius: 10px;
+                }
+                .row-practice {
+                    outline: #ebf0f7 3px solid;
                 }
                 .row-practice:hover {
                     background-color: #70747b;
                     color: white;
-                }
+                    outline: solid 3px #115dab;
+                    border-radius: 10px;
+                } */
             }
             td:first-child { border-top-left-radius: 10px; border-bottom-left-radius: 10px; }
             td:last-child { border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
