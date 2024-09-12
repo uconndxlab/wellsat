@@ -1,0 +1,91 @@
+main {
+    .policy-info {
+        div {
+            display: flex;
+            gap: 10px;
+        }
+        padding: 20px 100px 0px;
+        .score-heading {
+            font-size: 2em;
+        }
+        h2 {
+            margin: 0;
+        }
+    }
+    .table-sect {
+        padding: 10px 100px 60px;
+        .table-header {
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-style: hidden;
+            .align-center {
+                text-align: center;
+            }
+            .align-left {
+                text-align: left;
+            }
+            .align-right {
+                text-align: right;
+                padding-right: 7px;
+            }
+            thead {
+                line-height: 5em;
+            }
+            tbody {
+                border-radius: 20px;
+                padding: 20px 30px;
+                background-color: #ebf0f7;
+                .content-row {
+                    td {
+                        padding: 15px 30px;
+                    }                  
+                }
+                /* .border-row {
+                    background-color: white;
+                    td {
+                        height: 2px;
+                        padding: none;
+                    }
+                } */
+
+            }
+            h2 {
+                margin: 0;
+            }
+            h3 {
+                margin: 0;
+            }
+            p {
+                margin: 0;
+                color: #70747b;
+            }
+        }
+    }
+}
+
+tbody td,  tbody th {
+    border: 8px solid white;
+ }
+
+table tbody tr:first-child td:first-child {
+    border-top-left-radius: 10px;
+}
+
+table tbody tr:first-child td:last-child {
+    border-top-right-radius: 10px;
+}
+
+table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.roboto-400 {
+    font-family: Roboto,Helvetica Neue,sans-serif;
+}
