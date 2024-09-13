@@ -1,21 +1,25 @@
 html {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
 }
 
 body {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size:4em!important;
 }
 
 .rund-400 {
-    font-family: vag-rundschrift-d, sans-serif;
+    font-family: "vag-rundschrift-d", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
   
   .frank-400 {
-    font-family: "franklin-gothic-urw", sans-serif;
+    font-family: "franklin-gothic-urw", sans-serif!important;
     font-weight: 500;
     font-style: normal;
     letter-spacing: 0.05em;
@@ -29,119 +33,255 @@ body {
     color: #fff;
   }
 
-header {
-    padding: 0 100px;
-    background-color: #d2dbe7;
-    display: grid;
-    justify-items: center;
-    nav {
-        display: grid;
-        width: 100%;
-        grid-template-columns: min-content 1fr min-content;
-        a {
-            text-decoration: none;
-            h3 {
-                align-self: center;
-                justify-self: flex-start;
-                font-size: 2.5em;
-            }
-        }
-        ul {
-            align-self: center;
-            justify-self: center;
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            font-size: 1.3em;
-            li {
-                a {
-                    color: black;
-                    transition: all .1s ease;
-                }
-                a:hover {
-                    color: #cb2c3b;
-                }
-            }
-        }
-        div {
-            align-self: center;
-            justify-self: flex-end;
-            display: flex;
-            align-content: center;
-            gap: 14px;
-            .log-in {
-                background-color: transparent;
-                width: 75px;
-                border: none;
-                margin: 0;
-                gap: 6px;
-                margin: 0;
-                font-size: 1.3em;
-                cursor: pointer;
-                transition: all .1s ease;
-                a {
-                    color: black;
-                    transition: all .1s ease;
-                }
-            }
-            .log-in:hover {
-                a {
-                    color: #cb2c3b;
-                }
-            }
-            a {
-                color: #cb2c3b;
-                transition: .2s ease all;
-                .register {
-                    color: #cb2c3b;
-                    font-size: 1.3em;
-                    background-color: transparent;
-                    border: 2px solid #cb2c3b;
-                    margin: 0;
-                    padding: 8px 20px;
-                    border-radius: 8px;
-                    transition: .2s ease;
-                    cursor: pointer;
-                    transition: .2s ease all;
-                }
-            }
-            a:hover {
-                color: white;
-                .register {
-                    color: white;
-                    background-color: #cb2c3b;
-                }
-            }
-        }
-    }
+  main section a{
+    color:#cb2c3b!important;
+  }
+
+/*navigation*/
+.navbar a{
+    text-decoration:none!important;
+    font-size:18px!important;
 }
+
+nav h3{
+    margin-top:.5rem;
+    font-size:2.5em!important;
+}
+
+nav h3:hover{
+    color:#cb2c3b!important;
+}
+
+nav ul li a {
+    color: #000!important;
+    transition: all .1s ease;
+}
+
+header nav ul li a:hover {
+    color: #cb2c3b!important;
+}
+
+header nav div .register {
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid #cb2c3b;
+    margin: 0;
+    padding: 0px 20px;
+    border-radius: 8px;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+header nav div .register a{
+    color:#cb2c3b!important;
+}
+
+header nav div .register:hover {
+    background-color: #cb2c3b;
+}
+
+header nav div .register:hover a{
+    color:#fff!important;
+}
+
+/*buttons*/
+button.red-white, button.red-grey, button.red-black{
+    background-color: #cb2c3b;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 7px 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+button.red-white:hover{
+    background-color:#fff;
+    color:#cb2c3b!important;
+}
+
+button.red-black:hover{
+    background-color:#000;
+    color:#fff!important;
+}
+
+button.red-grey:hover{
+    background-color:#d2dbe7;
+    color:#000!important;
+}
+
+.grey-background{
+    background:#d2dbe7;
+}
+
+/*accordion*/
+.accordion {
+    z-index: -1;
+    width: 100%;
+    color: black;
+    background-color: white;
+}
+
+.accordion a {
+    color: #cb2c3b;
+}
+
+.accordion hr {
+    border: 1px solid #d2dbe7;
+}
+
+.accordion .question-cont {
+    position: relative;
+    margin: 10px 10px;
+}
+
+.accordion .question-cont .toggle-icon {
+    transition: transform 0.4s ease;
+}
+
+.accordion .question-cont.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.accordion .question-title {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    padding: 10px 0;
+    font-size: 1.4em;
+    color: black;
+    cursor: pointer;
+}
+
+.accordion .question-title p {
+    grid-column: 1;
+    margin: 0;
+}
+
+.accordion .question-title .arrow-toggle {
+    grid-column: 2;
+    justify-self: flex-end;
+    align-self: center;
+    padding: 0;
+}
+
+.accordion .question-title::before {
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 1em;
+    transform: translateY(-50%);
+}
+            
+.accordion .question-content {
+    position: relative;
+    max-height: 0;
+    font-size: 1.5em;
+    text-align: justify;
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    justify-items: start;
+    gap: 20px;
+    transition: max-height 0.5s ease;
+}
+
+.accordion .question-content ul {
+    margin: 0;
+}
+.accordion .question-content .question-desc {
+    font-size: 0.7em;
+    margin: 0;
+}
+.accordion .question-content .question-num {
+                    padding-right: 15px;
+                }
+.accordion .question-content .question-option {
+                    background-color: transparent;
+                    border: 2px solid black;
+                    margin: 0;
+                    padding: 15px 20px;
+                    border-radius: 12px;
+                    width: 100%;
+                    cursor: pointer;
+                    transition: all .2s ease;
+}
+.accordion .question-content .question-otion p {
+                    margin: 0;
+                    }
+                
+.accordion .question-content .question-option-long {
+                    background-color: transparent;
+                    border: 2px solid black;
+                    margin: 0;
+                    padding: 15px 20px;
+                    border-radius: 12px;
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: min-content 1fr;
+                    cursor: pointer;
+                    transition: all .2s ease;
+}
+.accordion .question-content .question-option-long p {
+                    margin: 0;
+                    }
+                
+                    .accordion .question-content .question-option:hover {
+                    color: #fff;
+                    background-color: #cb2c3b;
+                    border: 2px solid #cb2c3b;
+                }
+                .accordion .question-content .question-option-long:hover {
+                    color: #fff;
+                    background-color: #cb2c3b;
+                    border: 2px solid #cb2c3b;
+                }
+
+/*form*/
+form {
+    padding-top: 30px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+form h2 {
+        font-size: 4em;
+        margin: 0;
+        padding: 20px 0;
+    }
+form .msg-hide {
+        display: none;
+    }
+form input {
+        width: 400px;
+        height: 50px;
+        margin-bottom: 20px;
+        border: none;
+        background-color: white;
+        border: 2px black solid;
+        border-radius: 10px;
+        padding: 3px 15px;
+        font-size: 1.3em;
+    }
+form button {
+        font-size: 2em;
+        width: 300px;
+        background-color: #cb2c3b;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 12px;
+        transition: .2s ease;
+        cursor: pointer;
+    }
+form button:hover {
+        background-color: white;
+        color: #cb2c3b;
+    }
+
+/*footer*/
 footer {
     background-color: #d2dbe7;
-    display: grid;
-    justify-items: center;
-    div {
-        margin: 25px 0 25px 0;
-        width: 800px;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-items: center;
-        align-items: center;
-        #rudd-logo {
-            grid-column: 1;
-            grid-row: 1;
-            height: 200px;
-        }
-        #csch-logo {
-            grid-column: 2;
-            grid-row: 1;
-            height: 200px;
-        }
-        #uconn-logo {
-            grid-column: 1/-1;
-            grid-row: 2;
-            height: 130px;
-        }
-    }
 }
