@@ -28,6 +28,10 @@ header h1{
   .text-red {
     color: #cb2c3b;
   }
+
+  .text-black{
+    color:#000;
+  }
   
   .text-white {
     color: #fff;
@@ -61,7 +65,7 @@ header nav ul li a:hover {
     color: #cb2c3b!important;
 }
 
-header nav div .register {
+header .register {
     font-size: 18px;
     background-color: transparent;
     border: 2px solid #cb2c3b;
@@ -72,20 +76,21 @@ header nav div .register {
     cursor: pointer;
 }
 
-header nav div .register a{
+header .register a{
     color:#cb2c3b!important;
+    text-decoration:none;
 }
 
-header nav div .register:hover {
+header .register:hover {
     background-color: #cb2c3b;
 }
 
-header nav div .register:hover a{
+header .register:hover a{
     color:#fff!important;
 }
 
 /*buttons*/
-button.red-white, button.red-grey, button.red-black{
+button.red-white, button.red-grey, button.red-black, button.black-red{
     background-color: #cb2c3b;
     border: none;
     color: white;
@@ -95,6 +100,15 @@ button.red-white, button.red-grey, button.red-black{
     margin: 10px 0;
     cursor: pointer;
     transition: all .2s ease;
+}
+
+button.black-red{
+    color:#fff;
+    background-color:#000;
+}
+
+button.black-red:hover{
+    background-color:#cb2c3b
 }
 
 button.red-white:hover{
@@ -280,6 +294,45 @@ form button:hover {
         background-color: white;
         color: #cb2c3b;
     }
+
+.form-control {
+    border:solid 2px #000!important;
+}
+
+.form-control:focus{
+    box-shadow:0 0 0 0.25rem rgba(203, 44, 59,0.25)!important;
+}
+
+.form-check-input:focus{
+    border-color:#000;
+    box-shadow:0 0 0 0.25rem rgba(0, 0, 0,0.25)!important;
+}
+
+/*modal*/
+.modal-content{
+    border:0px!important;
+    border-radius:10px;
+}    
+.modal-header, .modal-footer{
+    border:0px!important;
+}
+
+.modal-header{
+    padding-bottom: 0px;
+}
+
+.btn-close{
+    --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(203, 44, 59,0.25);
+}
+
+/*assessment*/
+.header-divider{
+    background-color: #d2dbe7;
+      width: 5px;
+      height: 40px;
+      border-radius: 10px;
+      margin:0px 10px;
+  }
 
 /*footer*/
 footer {
