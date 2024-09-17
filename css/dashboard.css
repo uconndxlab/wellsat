@@ -1,86 +1,33 @@
 main {
-    display: grid;
-    grid-template-rows: min-content 1fr;
-    column-gap: 30px;
-    row-gap: 30px;
-    height: 700px;
-    padding: 0 100px;
-    margin: 40px 0;
-    .pre-assess {
-        display: none;
-        z-index: 2;
-        position: absolute;
-        height: 600px;
-        width: 900px;
-        background-color: #ebf0f7;
-        align-self: center;
-        justify-self: center;
-        border-radius: 30px;
-        -webkit-box-shadow: 0px 0px 41px -13px rgba(0,0,0,0.38);
-        -moz-box-shadow: 0px 0px 41px -13px rgba(0,0,0,0.38);
-        box-shadow: 0px 0px 41px -13px rgba(0,0,0,0.38);
-        transition: all .2s ease;
+    .filter-btn{
+        border:0px;
+        border-radius:5px;
+        background:#d2dbe7;
+        padding:5px 10px;
     }
-    .top-bar {
-        grid-row: 1;
-        display: grid;
-        grid-template-columns: min-content 1fr;
-        column-gap: 20px;
-        justify-items: center;
-        align-items: center;
-        /* border: 2px black solid; */
-        div {
-            background-color: #70747b;
-            width: 100%;
-            display: grid;
-            justify-items: center;
-            color: white;
-            border-radius: 10px;
-        }
-        a {
-            text-decoration: none;
-        }
-        button {
-            display: grid;
-            grid-template-columns: min-content 1fr;
-            align-items: center;
-            justify-items: center;
-            column-gap: 10px;
-            padding: 12px 27px;
-            border: none;
-            border-radius: 8px;
-            color: white;
-            height: 50px;
-            cursor: pointer;
-            svg {
-                grid-column: 1;
-            }
-            h2 {
-                grid-column: 2;
-                margin: 0;
-            }
-        }
-        .policy-btn {
-            background-color: #cb2c3b;
-            width: 340px;
-            transition: .2s ease all;
-        }
-        .policy-btn:hover, .practice-btn:hover{
-            background-color: black;
-        }
-        .practice-btn {
-            background-color: #115dab;
-            width: 360px;
-            transition: .2s ease all;
-        }
+
+    .filter-btn:hover{
+        background-color:#cb2c3b
     }
+
+    .filter-btn a{
+        text-decoration:none;
+        color:#000!important;
+    }
+
+    .filter-btn:hover a{
+        color:#fff!important;
+    }
+
+    .form-check-label{
+        margin-left:5px;
+    }
+
+    .form-check-input{
+        margin-left:10px;
+    }
+
     .table-sect {
-        grid-row: 2;
-        /* border: 2px black solid; */
-        text-align: left;
-        height: 100%;
-        overflow-y: scroll;
-        padding: 0 50px;
         table {
             width: 100%;
             /* border: 1px solid blue; */
