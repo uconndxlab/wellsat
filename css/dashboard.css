@@ -1,4 +1,31 @@
 main {
+    .filter-btn{
+        border:0px;
+        border-radius:5px;
+        background:#d2dbe7;
+        padding:5px 10px;
+    }
+
+    .filter-btn:hover{
+        background-color:#cb2c3b
+    }
+
+    .filter-btn a{
+        text-decoration:none;
+        color:#000!important;
+    }
+
+    .filter-btn:hover a{
+        color:#fff!important;
+    }
+
+    .form-check-label{
+        margin-left:5px;
+    }
+
+    .form-check-input{
+        margin-left:10px;
+    }
 
     .table-sect {
         table {

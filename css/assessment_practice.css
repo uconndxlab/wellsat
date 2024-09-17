@@ -6,10 +6,12 @@
   background-color: #fff;
   display: grid;
   justify-items: flex-start;
+  border-radius:5px;
   div {
     height: 5px;
     width: 25%;
     background-color:  #115dab;
+    border-radius:5px;
   }
 }
 .under-prog-bar {

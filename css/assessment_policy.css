@@ -6,8 +6,10 @@
   background-color: #fff;
   display: grid;
   justify-items: flex-start;
+  border-radius:5px;
   div {
     height: 5px;
+    border-radius:5px;
     width: 25%;
     background-color: #cb2c3b;
   }
