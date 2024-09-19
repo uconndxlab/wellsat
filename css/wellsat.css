@@ -309,6 +309,9 @@ form button:hover {
 }
 
 /*modal*/
+.modal{
+    --bs-modal-width: 700px!important;
+}
 .modal-content{
     border:0px!important;
     border-radius:10px;
