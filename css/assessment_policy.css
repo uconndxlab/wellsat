@@ -91,7 +91,7 @@ header {
       cursor: pointer;
     }
     .section-complete:hover {
-      border: #000 6px solid;
+      border: #000 3px solid;
     }
     .section-current {
       border-radius: 50px;
@@ -112,7 +112,7 @@ header {
       }
     }
     .section-current:hover {
-      border: #000 6px solid;
+      border: #000 3px solid;
     }
     .section-open {
       border-radius: 50px;
@@ -124,7 +124,7 @@ header {
       cursor: pointer;
     }
     .section-open:hover {
-      border: #000 6px solid;
+      border: #000 3px solid;
     }
     /* .section-subtitle {
       position: absolute;
