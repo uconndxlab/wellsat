@@ -4,31 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WellSAT Home Page</title>
-    <link rel="stylesheet" href="css/wellsat.css">
-    <link rel="stylesheet" href="css/scorecard.css">
     <link rel="stylesheet" href="https://use.typekit.net/crt1krp.css">
     <link rel="stylesheet" href="https://use.typekit.net/yvl7cdi.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/wellsat.css">
+    <link rel="stylesheet" href="css/scorecard.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html"><h3 class="rund-400 text-red">WellSAT</h3></a>
-            <ul>
-                <li class="frank-400"><a href="index.html">Home</a></li>
-                <li class="frank-400"><a href="about.html">About</a></li>
-                <li class="frank-400"><a href="faq.html">FAQ</a></li>
-                <li class="frank-400"><a href="triennial.html">Triennial Assessment</a></li>
-                <li class="frank-400"><a href="resources.html">Resources</a></li>
-                <li class="frank-400"><a href="dashboard.html">Dashboard</a></li>
-            </ul>
-            <div class="header-right">
-                <button class="frank-400 log-in"><a href="log_in.html">Log In</a></button>
-                <a href="register.html"><button class="frank-400 text-red register">Register</button></a>
+    <header class="grey-background">
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+              <a href="index.html"><h3 class="navbar-brand rund-400 text-red">WellSAT</h3></a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item frank-400">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item frank-400">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item frank-400">
+                    <a class="nav-link" href="triennial.html">Triennial Assessment</a>
+                  </li>
+                  <li class="nav-item frank-400">
+                    <a class="nav-link" href="resources.html">Resources</a>
+                  </li>
+                  <li class="nav-item frank-400">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item frank-400">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+
+                <div class="d-flex">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item frank-400">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                          </li>
+                        <li class="nav-item frank-400">
+                            <a class="nav-link" href="log_in.html">Log In</a>
+                        </li>
+                    </ul>
+                    <button class="frank-400 text-red register"><a href="register.html">Register</a></button>
+                </div>
+
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
     <main>
-        <section class="policy-info">
+        <section class="policy-info container">
             <div>
                 <h1 class="rund-400 score-heading">Your District's Scorecard</h1>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 30px; fill: #cb2c3b;"><path d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"/></svg>
@@ -38,7 +70,7 @@
             <p class="roboto-400">Congratulations! You have completed the WellSAT. Check out your scorecard below. It contains details of how you scored on each item and section of the assessment. It also provides resources that will help you improve your district’s school wellness policy.</p>
             <p class="roboto-400">Items with a rating of “0” (item not addressed in the policy) or “1” (general or weak statement addressing the item) can be improved by referring to the resource links next to the items. Multiple resources addressing school wellness policy topics are available online. To avoid duplicative information, we have included a small selection, rather than a comprehensive listing.</p>
         </section>
-        <section class="table-sect">
+        <section class="table-sect container">
             <table class="table-header">
                 <thead>
                     <tr>
@@ -81,10 +113,18 @@
         </section>
     </main>
     <footer>
-        <div>
-            <img src="images/RUDD_logo.png" alt="Rudd Center Logo" id="rudd-logo">
-            <img src="images/CSCH_logo.png" alt="CSCH Logo" id="csch-logo">
-            <img src="images/UCONN_logo.png" alt="UConn Logo" id="uconn-logo">
+        <div class="container" style="padding-top:50px;padding-bottom:50px;">
+            <div class="row align-items-center">
+                <div class="col text-center">
+                    <img src="images/RUDD_logo.png" alt="Rudd Center Logo" id="rudd-logo" height="150px;">
+                </div>
+                <div class="col text-center">
+                    <img src="images/CSCH_logo.png" alt="CSCH Logo" id="csch-logo" height="150px;">
+                </div>
+                <div class="col text-center">
+                    <img src="images/UCONN_logo.png" alt="UConn Logo" id="uconn-logo" height="80px;">
+                </div>
+            </div>
         </div>
     </footer>
 </body>
