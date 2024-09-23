@@ -66,6 +66,87 @@ main {
                     color: #70747b;
                     border-radius: 10px;
                     transition: .2s ease all;
+                    .dash-name {
+                        p {
+                            margin: 0;
+                        }
+                        a {
+                            svg {
+                                width: 25px;
+                                fill: #cb2c3b;
+                                transition: all .1s ease;
+                            }
+                            svg:hover {
+                                fill: #70747b;
+                            }
+                        }
+                    }
+                    .dash-score {
+                        ul {
+                            list-style: none;
+                            text-decoration: none;
+                            padding: 0;
+                            li {
+                                a {
+                                    display: flex;
+                                    gap: 10px;
+                                    align-content: center;
+                                    text-decoration: none;
+                                    p {
+                                        margin: 0;
+                                    }
+                                    svg {
+                                        height: 25px;
+                                        transition: all .1s ease;
+                                    }
+                                    .score-pol-icon {
+                                        fill: #cb2c3b;
+                                        transition: all .1s ease;
+                                    }
+                                    .score-pol-text {
+                                        color: #cb2c3b;
+                                        transition: all .1s ease;
+                                    }
+                                    .score-pract-icon {
+                                        fill: #115dab;
+                                        transition: all .1s ease;
+                                    }
+                                    .score-pract-text {
+                                        color: #115dab;
+                                        transition: all .1s ease;
+                                    }
+                                    .score-tri-icon {
+                                        fill: black;
+                                        transition: all .1s ease;
+                                    }
+                                    .score-tri-text {
+                                        color: black;
+                                        transition: all .1s ease;
+                                    }
+                                }
+                                a:hover {
+                                    .score-pol-icon {
+                                        fill: #70747b;
+                                    }
+                                    .score-pol-text {
+                                        color: #70747b;
+                                    }
+                                    .score-pract-icon {
+                                        fill: #70747b;
+                                    }
+                                    .score-pract-text {
+                                        color: #70747b;
+                                    }
+                                    .score-tri-icon {
+                                        fill:#70747b;
+                                    }
+                                    .score-tri-text {
+                                        color:#70747b;
+                                    }
+                                }
+                            }
+                        }
+                    }
                     td {
                         padding: 10px 50px;
                         input[type='checkbox'] {
