@@ -308,7 +308,15 @@ form button:hover {
     box-shadow:0 0 0 0.25rem rgba(0, 0, 0,0.25)!important;
 }
 
+.form-group textarea{
+    border:2px solid #000;
+    border-radius:12px;
+}
+
 /*modal*/
+.modal{
+    --bs-modal-width: 700px!important;
+}
 .modal-content{
     border:0px!important;
     border-radius:10px;
