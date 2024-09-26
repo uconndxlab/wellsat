@@ -178,6 +178,17 @@ main {
             td:last-child { border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
         }
     }
+
+.more-icon {
+    fill: #70747b;
+    width: 40px;
+    transition: all .1s ease;
+}
+
+.more-icon:hover {
+    fill: #000;
+}
+
     * {
         --sb-track-color: #ebf0f7;
         --sb-thumb-color: #d2dbe7;
