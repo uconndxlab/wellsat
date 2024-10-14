@@ -43,6 +43,23 @@
     }
   }
 
+  button.blue-white{
+    background-color: #115dab;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 7px 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+button.blue-white:hover{
+  background-color: #fff;
+  color: #115dab;
+}
+
 
 header {
   .sect-bar-cont {
