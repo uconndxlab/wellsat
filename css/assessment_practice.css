@@ -286,13 +286,13 @@ main {
           }
         }
         .question-option:hover {
-          color: white;
-          background-color:  #115dab;
+          color: #000;
+          background-color:  #d2dbe7;
           border: 2px solid  #115dab;
         }
         .question-option-long:hover {
-          color: white;
-          background-color:  #115dab;
+          color: #000;
+          background-color:  #d2dbe7;
           border: 2px solid  #115dab;
         }
       }
