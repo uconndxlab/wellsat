@@ -181,6 +181,10 @@ button.red-grey:hover{
     padding: 0;
 }
 
+.accordion-button::after {
+  filter: invert(1); /* This inverts the default black arrow to white */
+}
+
 .accordion .question-title::before {
     color: black;
     position: absolute;
