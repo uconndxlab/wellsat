@@ -38,7 +38,7 @@ header h1{
   }
 
   main section a{
-    color:#cb2c3b!important;
+    color:#B02734!important;
   }
 
 /*navigation*/
@@ -53,7 +53,7 @@ nav h3{
 }
 
 nav h3:hover{
-    color:#cb2c3b!important;
+    color:#B02734!important;
 }
 
 nav ul li a {
@@ -62,7 +62,7 @@ nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #cb2c3b!important;
+    color: #B02734!important;
 }
 
 header .register {
